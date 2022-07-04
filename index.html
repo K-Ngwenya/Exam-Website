@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="jquery.min.js"></script>
+    <script src="anime.min.js"></script>
+    <script src="textAnimations.js"></script>
+</head>
+<body>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" class="link">Home</a></li>
+            </ul>
+        </nav>
+        <main>
+            <canvas id="testCan"></canvas>
+            <script src="granim.min.js"></script>
+            <script>
+                var fancyBackground = new Granim({
+                    element: '#testCan',
+                    name: 'granim',
+                    opacity: [1, 1],
+                    states: {
+                        "default-state": {
+                            gradients: [
+                                ['#f64e4d', '#2e2c2c'],
+                                ['#f64e4d', '#2e2c2c']
+                            ]
+                        }
+                    }
+                });
+            </script>
+            <h1 class="homePage" id="num1" onmouseenter="ripple('num1')"">About Me</h1>
+                <div class="container short">
+                    <button type="button" class="box" onclick="window.location.href='bioPage1.html'">
+                        <h1 class="inner">
+                            Resume
+                        </h1>
+                    </button>
+                    <button type="button" class="box" onclick="window.location.href='bioPage2.html'">
+                        <h1 class="inner">
+                            Projects
+                        </h1>
+                    </button>
+                    <button type="button" class="box" onclick="window.location.href='blogPost1.html'">
+                        <h1 class="inner">
+                             Interests
+                          </h1>
+                     </button>
+                 </div>
+            <h1 class="homePage" id="num3" onmouseenter="ripple('num3')">Blog Posts</h1>
+                    <div class="container">
+                        <button type="button" class="box" onclick="window.location.href='blogPost1.html'">
+                            <h1 class="inner">
+                                The Media is the Message?
+                            </h1>
+                        </button>
+                        <button type="button" class="box" onclick="window.location.href='blogPost2.html'">
+                            <h1 class="inner">
+                                Semantic Markup.
+                            </h1>
+                        </button>
+                        <button type="button" class="box" onclick="window.location.href='blogPost3.html'">
+                            <h1 class="inner">
+                                Metadata.
+                            </h1>
+                        </button>
+                        <button type="button" class="box" onclick="window.location.href='blogPost4.html'">
+                            <h1 class="inner">
+                                Information Geographies.
+                            </h1>
+                        </button>
+                        <button type="button" class="box" onclick="window.location.href='blogPost5.html'">
+                            <h1 class="inner">
+                                Society and Design Justice.
+                            </h1>
+                        </button>
+                        <button type="button" class="box" onclick="window.location.href='blogPost6.html'">
+                            <h1>
+                                UX and UI Analysis.
+                            </h1>
+                        </button>
+                    </div>
+                <h1 class="homePage" id="num2" onmouseenter="ripple('num2')">Design Journey</h1>
+                <div class="container short">
+                    <button type="button" class="box" onclick="window.location.href='designPage1.html'">
+                        <h1 class="inner">
+                            Design Changes
+                        </h1>
+                    </button>
+                    <button type="button" class="box" onclick="window.location.href='designPage2.html'">
+                        <h1 class="inner">
+                            Style Guide
+                        </h1>
+                    </button>
+                    <button type="button" class="box" onclick="window.location.href='designPage3.html'">
+                        <h1 class="inner">
+                            Reflection
+                        </h1>
+                    </button>
+                </div>
+        </main>
+</body>
+    
+</html>

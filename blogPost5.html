@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="blogPosts.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="link">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <canvas id="testCan"></canvas>
+        <script src="granim.min.js"></script>
+        <script>
+            var fancyBackground = new Granim({
+                element: '#testCan',
+                name: 'granim',
+                opacity: [1, 1],
+                states: {
+                    "default-state": {
+                        gradients: [
+                            ['#f64e4d', '#000000'],
+                            ['#000000', '#f64e4d']
+                        ],
+                        transitionSpeed: 10000,
+                    }
+                }
+            });
+        </script>
+        <section class="blogText">
+            <h1>
+                Ethical Dilemmas of Software Engineering
+            </h1>
+            <p class="paragraph">
+                Codes of ethics, in all areas, are supposed to be a rigid 
+                set of principles that govern how we behave. However, this 
+                is almost never the case. Ethics have become more like guidelines. 
+                Especially in the world of software. Software engineering as a 
+                field of research and a career is still relatively young. Because of
+                this, it seems like we never know what to do when people start to 
+                do dodgy things. So we just kind of stand on the side-lines, asking 
+                ‘difficult’ questions and being okay when nothing comes of it.
+            </p>
+            <p class="paragraph">
+                I believe that these dilemmas should not even be dilemmas. If Boeng 
+                engineers implement a quick fix to an issue they created and it kills 
+                hundreds of people, there should be massive ramifications for that. 
+                When Tesla misinforms people about the capabilities of their vehicles
+                and it gets people killed, there should be massive ramifications for 
+                that. Instead, these things are let off with slap on the wrist. We 
+                are okay with these things because when they come out, because the 
+                companies scramble and panic to rectify the issue. I believe watching 
+                them squirm like this gives us enough satisfaction to forget about the 
+                issue because we forget that they’re freaking out to save their income 
+                stream and not because they know they’re wrong. 
+            </p>
+            <p class="paragraph">
+                Let’s look at the Tesla incidents for a minute. Tesla was not upfront 
+                about the actual capabilities of their vehicles. This wouldn’t be the 
+                first time this occurred in advertising. The real problem here is that 
+                people died as a result. So how do we punish this? Apparently, it is 
+                stated in the manuals that the cars require constant supervision. It 
+                may be hidden behind a few pages of the manual, but it’s there. Is it 
+                unethical not to be upfront about such important details or is the consumer 
+                responsible for reading and understanding the entire user manual? Where 
+                is the line between consumer responsibility and company ethics? 
+            </p>
+            <p class="paragraph">
+                This is what makes ethical discussions so difficult. Even though there 
+                should be a solid black line between right and wrong, there are just so 
+                many perspectives and variables that turn a simple line into a labyrinth. 
+            </p>
+            <p class="paragraph">
+                My thoughts when I first heard about Tesla’s shenanigans, I believed that 
+                they should be shut down. Never to operate again. I mean being dishonest 
+                and killing people? That’s despicable. Then I thought about the thousands 
+                and thousands of people employed by Tesla. Is taking down an entire company 
+                of (probably) innocent people ethical? Then there’s the fact that Tesla 
+                technically did tell people in their user manuals. Can we overrule the law 
+                because people died? That’s quite a slippery slope and we’ll soon find 
+                ourselves pushing the law aside whenever something bad happens. Now even as 
+                someone trying to enforce ethical behaviours, you have to worry about doing 
+                it ethically. 
+            </p>
+            <p class="paragraph">
+                Topics like ethics make me cringe. I really don’t like them. They just never 
+                seem to have an actual solution. A conversation on ethics ends when everybody 
+                involved decided they can’t/won’t participate anymore. Not because we’ve all 
+                come to an understanding. It almost feels pointless to discuss.
+            </p>
+            <p class="paragraph">
+                I understand why discussing it is important though. Things aren’t great right 
+                now, but without the people asking these tough questions and having these 
+                discussions, things could be a hell of a lot worse.  
+            </p>
+            <p class="paragraph">
+                I don’t even know if the first half of this blog post made any sense. I was 
+                (and still am) trying to think of this from a million different perspectives 
+                at once and it is frying my brain. This is where I give up. 
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <button type="button" class="box" onclick="window.location.href='blogPost1.html'">
+                <h1>
+                    The Median is the Message?
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost2.html'">
+                <h1>
+                    Semantic Markup.
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost3.html'">
+                <h1>
+                    Metadata.
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost4.html'">
+                <h1>
+                    Information Geographies
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost5.html'">
+                <h1>
+                    Society and Design Justice.
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost6.html'">
+                <h1>
+                    My UX and UI.
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost7.html'">
+                <h1>
+                    My UX and UI.
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost68html'">
+                <h1>
+                    My UX and UI.
+                </h1>
+            </button>
+        </div>
+    </footer>
+</body>
+</html>

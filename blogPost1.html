@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="blogPosts.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="link">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <canvas id="testCan"></canvas>
+        <script src="granim.min.js"></script>
+        <script>
+            var fancyBackground = new Granim({
+                element: '#testCan',
+                name: 'granim',
+                opacity: [1, 1],
+                states: {
+                    "default-state": {
+                        gradients: [
+                            ['#f64e4d', '#000000'],
+                            ['#000000', '#f64e4d']
+                        ],
+                        transitionSpeed: 10000,
+                    }
+                }
+            });
+        </script>
+        <section class="blogText">
+            <h1>
+                The Medium is the Message?
+            </h1>
+            <p class="paragraph">
+                At first glance The Medium is the Message seems to be trying to teach us that 
+                what we write/say in the media is inconsequential. I was quite happy to believe 
+                that this was McLuhan’s message because with the scale of the media today in its 
+                many forms (mostly TV and the internet), I can see how a single piece of content 
+                can be seen as a drop of water in an ocean. Even the biggest news stories, whether 
+                they are about war or a massive petrol price hike, are forgotten quite quickly. 
+                This conclusion began to fall apart when I realised that the reading was written in 
+                the 60s. A time when newspaper and radio were still the largest forms of media and TV 
+                was only a little over 8 years old in Canada. 
+            </p>
+            <p class="paragraph">
+                It seems more like McLuhan was speaking on the power of the media themselves. As the 
+                media change and grow, the way we interact with information changes and grows as well. 
+            </p>
+            <p class="paragraph">
+                For example: When radio and newspaper were the main sources of information it was a 
+                little easier to trust the information you get. The newspaper came from a registered 
+                company with a CEO, management, and a building somewhere. Writing false information 
+                would have serious consequences for those people, so they were less likely to go buck
+                wild printing lies on a weekly basis. The internet on the other hand, allows for any 
+                person with an internet connection and an agenda to anonymously write garbage and post 
+                it as news. Many of us are aware of this and will take the information with a grain of 
+                salt. Some will even go as far as doing their own research to try and verify what they’re reading. 
+            </p>
+            <p class="paragraph">
+                Changes like this can affect far more than just how we interact with information. As 
+                the media grows to deliver more information faster or make information more easily 
+                available, we will begin to see the world around us differently. Consumers may choose 
+                their preferred products based on how these products are sourced (information which is 
+                usually readily available on the right websites). Education is made easier with more 
+                accessible information. Our pets may live longer because we don’t have to go to a vet 
+                to learn that you can’t just feed your dog anything. All this information was out there 
+                already for a long time. The media has just grown large enough to be able to deliver it 
+                all at any given time, and fast enough for it to be available to a lot more people.
+            </p>
+            <p class="paragraph">
+                This change in how we view information is entirely due to changes in the medium. The 
+                content itself has no effect on how we process it. It is to my understanding that McLuhan 
+                is trying to highlight that if we focus on the content too much, we fail to notice the 
+                effect of the medium on our lives. 
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+        <button  type="button" class="box" onclick="window.location.href='blogPost1.html'">
+            <h1>
+                The Median is the Message?
+            </h1>
+        </button>
+        <button type="button" class="box" onclick="window.location.href='blogPost2.html'">
+            <h1>
+                Semantic Markup.
+            </h1>
+        </button>
+        <button type="button" class="box" onclick="window.location.href='blogPost3.html'">
+            <h1>
+                Metadata.
+            </h1>
+        </button>
+        <button type="button" class="box" onclick="window.location.href='blogPost4.html'">
+            <h1>
+                Information Geographies
+            </h1>
+        </button>
+        <button type="button" class="box" onclick="window.location.href='blogPost5.html'">
+            <h1>
+                Society and Design Justice.
+            </h1>
+        </button>
+        <button type="button" class="box" onclick="window.location.href='blogPost6.html'">
+            <h1>
+                My UX and UI.
+            </h1>
+        </div>
+    </footer>
+</body>
+</html>

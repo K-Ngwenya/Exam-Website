@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="blogPosts.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="link">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <canvas id="testCan"></canvas>
+        <script src="granim.min.js"></script>
+        <script>
+            var fancyBackground = new Granim({
+                element: '#testCan',
+                name: 'granim',
+                opacity: [1, 1],
+                states: {
+                    "default-state": {
+                        gradients: [
+                            ['#f64e4d', '#000000'],
+                            ['#000000', '#f64e4d']
+                        ],
+                        transitionSpeed: 10000,
+                    }
+                }
+            });
+        </script>
+        <section class="blogText">
+            <h1>
+                Analysis of my UI and UX.
+            </h1>
+            <p class="paragraph">
+                A portfolio site is just there to provide the user with information. 
+                Therefore, the ability to traverse the site and finding the information
+                easily is what I want my site to provide. To do this, the navigation 
+                will have to be well thought out and the UI needs to be neat and simple 
+                as not to confuse the user.
+            </p>
+            <p class="paragraph">
+                I started by designing my UX as Peta suggested in her notes. First, 
+                I thought about the information I was providing. It can be divided into 
+                three categories: Blog posts, Design information, and information about me. 
+                I believe that a user entering the portfolio site is either an employer, in 
+                which case they would want to see the information about me (my bio, projects 
+                I’ve worked on, my interests) or they are marking. If they are marking, they 
+                might be more interested in my blog posts. By dividing this information into 
+                sections, I save the user from having to swim through things they never wanted 
+                to look at so they can get to what they want. I also offer the user fewer choices 
+                to make at once, thus reducing the time it takes for the user to decide (Hick’s Law). 
+                The user first chooses between the three sections (this is the first decision). Then 
+                they choose between one of the pieces of information found within the sections. There 
+                is a maximum of 6 of these pieces of information. Had I not divided the information, 
+                the user would have to choose between 12 different pieces of information at one time.
+            </p>
+            <p class="paragraph">
+                Once the user selects a piece of information, they are taken to a screen where they 
+                will first find the article they have chosen in the centre of the screen. At the bottom 
+                of the screen, the user sees a collection of large buttons that they can use to navigate 
+                through information of the same section. I decided that they should be at the bottom of 
+                the page because this is where the user will end up when they are done reading through the 
+                information. This presented the problem of overflow. If I wanted to have the information in a 
+                container large enough for the user to be comfortable reading, the buttons would be hidden 
+                at the bottom of the page. To solve this, I increased their size and reduced the padding around 
+                them so that they would be closer to where the user stops reading (Fitts’ Law). This way, the 
+                buttons are visible, and the user will know that there’s more to the page if they scroll beyond 
+                the container. 
+            </p>
+            <p class="paragraph">
+                The nav bar is there for people who are looking for “quick info”. If you’re here to read my 
+                blog posts or maybe to read about how I designed the web page, you probably clicked on the 
+                site with the intention of sticking around for a bit. Now let’s say you clicked on the site 
+                because you want to find my email address, or maybe my CV, or something like that. That kind 
+                of information, that you would simply check and then leave the site, is what I call “quick info”. 
+                This is what the buttons on the nav bar provide the user with.
+            </p>
+            <p class="paragraph">
+                My thoughts when I first heard about Tesla’s shenanigans, I believed that 
+                they should be shut down. Never to operate again. I mean being dishonest 
+                and killing people? That’s despicable. Then I thought about the thousands 
+                and thousands of people employed by Tesla. Is taking down an entire company 
+                of (probably) innocent people ethical? Then there’s the fact that Tesla 
+                technically did tell people in their user manuals. Can we overrule the law 
+                because people died? That’s quite a slippery slope and we’ll soon find 
+                ourselves pushing the law aside whenever something bad happens. Now even as 
+                someone trying to enforce ethical behaviours, you have to worry about doing 
+                it ethically. 
+            </p>
+            <p class="paragraph">
+                Now we get to the UI.
+            </p>
+            <p class="paragraph">
+                I have given all the clickable elements on the site a border effect for 
+                when the user hovers over them. This just lets the user know that they can 
+                indeed click on the element they are looking at.   
+            </p>
+            <p class="paragraph">
+                Since a large majority of the information given to the user is going to be 
+                text based, I want them to be comfortable reading for a long time. This is the 
+                reason for using relatively dull colours (black, white and grey). These colours 
+                together are very easy on the eyes, just like a newspaper. I’ve never seen somebody 
+                rub their eyes after reading one of those for a long time. 
+            </p>
+            <p class="paragraph">
+                I have used a font from the Sans-Serif font family. Peta mentioned in her notes that 
+                they are good for readability and after some investigation of my own, I found that 
+                it was the best font family for an almost entirely text-based site. It has great 
+                legibility and is very comfortable to read.
+            </p>
+            <p class="paragraph">
+                My website is not overly complicated and has very few UI/UX elements to speak about. 
+                I believe that the few elements that are there, have come together to create an easy, 
+                comfortable browsing and reading experience. It may not be visually spectacular, but 
+                your eyes will thank you for that.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <button type="button" class="box" onclick="window.location.href='blogPost1.html'">
+                <h1>
+                    The Median is the Message?
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost2.html'">
+                <h1>
+                    Semantic Markup.
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost3.html'">
+                <h1>
+                    Metadata.
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost4.html'">
+                <h1>
+                    Information Geographies
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost5.html'">
+                <h1>
+                    Society and Design Justice.
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost6.html'">
+                <h1>
+                    My UX and UI.
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost7.html'">
+                <h1>
+                    My UX and UI.
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost68html'">
+                <h1>
+                    My UX and UI.
+                </h1>
+            </button>
+        </div>
+    </footer>
+</body>
+</html>

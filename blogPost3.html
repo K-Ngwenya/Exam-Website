@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="blogPosts.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="link">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <canvas id="testCan"></canvas>
+        <script src="granim.min.js"></script>
+        <script>
+            var fancyBackground = new Granim({
+                element: '#testCan',
+                name: 'granim',
+                opacity: [1, 1],
+                states: {
+                    "default-state": {
+                        gradients: [
+                            ['#f64e4d', '#000000'],
+                            ['#000000', '#f64e4d']
+                        ],
+                        transitionSpeed: 10000,
+                    }
+                }
+            });
+        </script>
+        <section class="blogText">
+            <h1>
+                Metadata.
+            </h1>
+            <p class="paragraph">
+                Metadata is data that provides information about other data. 
+                It helps to describe, sort, and identify pieces of information. 
+                For example, a book can have a title, an author, and a year 
+                published. This information is metadata.
+            </p>
+            <p class="paragraph">
+                Metadata comes in a few different flavours. The main three are 
+                Descriptive metadata, Administrative metadata, and Structural metadata.
+            </p>
+            <p class="paragraph">
+                Descriptive metadata helps us discover, identify, and select resources. 
+                Examples of this include titles, authors, keywords, and dates. This 
+                is the simplest and most utilized form of metadata. 
+            </p>
+            <p class="paragraph">
+                Administrative metadata is all about control and preservation. It tells us 
+                what types of instructions, rules, and restrictions are placed on a file. 
+                This type of information is used to manage access to the information. 
+                Examples of this are copyright information, owner and licensing information, 
+                and preservation activities.
+            </p>
+            <p class="paragraph">
+                Structural metadata is all about organization and, well, structure. It 
+                describes how components of data are organized and put together with other 
+                data. Examples of this are page numbers, sections, chapters, indexes, and Tables of Content. 
+            </p>
+            <p class="paragraph">
+                The purpose of metadata is to make finding the right information easier 
+                for the user and even though this sounds like an optional luxury, it is 
+                extremely important. Let’s try to imagine a world without metadata: 
+            </p>
+            <p class="paragraph">
+                Let’s imagine a library. Not an infinite one, just your regular public 
+                library. Your average public library can easily have over a thousand 
+                books. Now let’s remove all the covers, titles, bar codes, and blurbs from 
+                those books. Now if you wanted to find, say, a book on dentistry it would 
+                be extremely difficult. You would have to look inside every single book 
+                to figure out if it’s the book you want. You could get lucky and find it 
+                on the first, second, or third try but what if you don’t? What if you start 
+                on the opposite side of the library and the book you want is 350 books away? 
+            </p>
+            <p class="paragraph">
+                Now imagine the same scenario in the context of the world wide web. Millions 
+                of articles, web pages, videos, and documents but no metadata. It would all 
+                be useless because you’d need to perform a ritual and sacrifice a goat every 
+                time you want to find something. So, unless you’re a wizard, you need metadata.
+            </p>
+            <p class="paragraph">
+                Metadata makes it possible for the user to find exactly what they are looking 
+                for quickly and efficiently. It also makes it possible for people who provide 
+                information to organise their work.
+            </p>
+            <p class="paragraph">
+                The preservation of knowledge also depends on metadata. Storing thousands of 
+                GB of data is great but how do we get pieces of it back out if we don’t know
+                where those pieces are?
+            </p>
+            <p class="paragraph">
+                The MEMEX, as proposed by Vannevar Bush in 1945, would allow people to store 
+                and recall information with great speed and flexibility. Even this device would 
+                almost entirely on the use of metadata to organize, store, and recall data.
+            </p>
+            <p class="paragraph">
+                Metadata allows is useful in this way because it allows us to organize information 
+                based on certain pieces of data. Articles can be grouped together by author or year 
+                published. Web pages can appear together in a search because they have the same/similar 
+                titles. Information on 100 different topics can be found, neatly stored in a single 
+                1000-page encyclopedia.
+            </p>
+            <p class="paragraph">
+                Without it, information is a waste of time and space. Through doing research, I have 
+                developed a new sense of appreciation for Metadata. I may not have known about it a 
+                week ago, but now I know that I would not be able to live without it.
+            </p>
+            <h1>
+                References
+            </h1>
+            <p class="paragraph">
+                Collaborators, M., 2022. Metadata. [Online] 
+                Available at: <a href="https://en.wikipedia.org/wiki/Metadata">https://en.wikipedia.org/wiki/Metadata</a>
+            </p>
+            <p class="paragraph">
+                Kompromise, n.d. What is Metadata?. [Online] 
+                Available at: <a href="https://www.komprise.com/glossary_terms/metadata/#">https://www.komprise.com/glossary_terms/metadata/#</a> 
+            </p>
+            <p class="paragraph">
+                Kranz, G., 2021. What is metadata and how does it work?. [Online] 
+                Available at: <a href="https://www.techtarget.com/whatis/definition/metadata">https://www.techtarget.com/whatis/definition/metadata</a> 
+
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <button type="button" class="box" onclick="window.location.href='blogPost1.html'">
+                <h1>
+                    The Median is the Message?
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost2.html'">
+                <h1>
+                    Semantic Markup.
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost3.html'">
+                <h1>
+                    Metadata.
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost4.html'">
+                <h1>
+                    Information Geographies
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost5.html'">
+                <h1>
+                    Society and Design Justice.
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost6.html'">
+                <h1>
+                    My UX and UI.
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost7.html'">
+                <h1>
+                    My UX and UI.
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost68html'">
+                <h1>
+                    My UX and UI.
+                </h1>
+            </button>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="designPages.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="link">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <canvas id="testCan"></canvas>
+        <script src="granim.min.js"></script>
+        <script>
+            var fancyBackground = new Granim({
+                element: '#testCan',
+                name: 'granim',
+                opacity: [1, 1],
+                states: {
+                    "default-state": {
+                        gradients: [
+                            ['#f64e4d', '#000000'],
+                            ['#000000', '#f64e4d']
+                        ],
+                        transitionSpeed: 10000,
+                    }
+                }
+            });
+        </script>
+        <section class="blogText">
+            <h1>
+                Design Changes
+            </h1>
+            <p class="paragraph">
+                My first website had the goal of being very simple, with 
+                minimal navigation methods and a colour scheme that was 
+                both clean and easy on the eye.
+            </p>
+            <p class="paragraph">
+                This site has similar goals, but with the BMW website as 
+                inspiration. My goal is still to keep the number of different 
+                navigation methods to a minimum. I have decided to have my 
+                navigation bar on the top of the page like normal websites. 
+                This is not only something that is familiar to most experienced 
+                web surfers, but it also gives me more screen space to work with 
+                and makes the technical work a little easier. Side navigation bars 
+                can be finicky when you’re tackling them for the first time. This 
+                decision was also inspired by the BMW website, which has a navigation 
+                bar on the top of the screen. 
+            </p>
+            <p class="paragraph">
+                I also decided to have my home page dedicated to navigation. It should 
+                act as a sort of “hub” where the user can go to find a path to 
+                everything on the site in once place. This decision came with a problem. 
+                I want to have a clean, neat sight, but if I’m going to have everything 
+                on one page it might mess up that vision. My solution to this problem came 
+                to me when I was on the BMW website, browsing and looking at options for 
+                cars I can’t afford, and I noticed that their “Build & Price” pages hold a 
+                lot of different options and information without overloading the page. This 
+                is because some of the options they want you to chose from are hidden and 
+                scrollable, so the user only sees about 2 or 3 at a time. This is where I got 
+                the idea for “scrollable buttons” (I’m not sure what to call that section 
+                where you can scroll through a horizontal set of buttons) came from. The user 
+                can find and choose which ever piece of information they want without being 
+                overwhelmed by all the buttons and links on their screen. 
+            </p>
+            <p class="paragraph">
+                The home page is separated into 3 groups of buttons (separated by headings): 
+                Blog Posts, Design Journey, and About me. I just thought it would be a nice, 
+                neat way to divide the information up. This is necessary because if I have 
+                millions of items you can scroll through, it will become extremely difficult 
+                for anybody to find anything. Right now, there are a maximum of 6 buttons in 
+                each section and I believe I can go up to 10 before the system will need to 
+                be changed. 
+            </p>
+            <p class="paragraph">
+                Now you might be thinking “If these scrollable buttons exist, what’s the point 
+                of the nav bar?”. Good question. The nav bar is there for people who are looking 
+                for “quick info”. If you’re here to read my blog posts or maybe to read about 
+                how I designed the web page, you probably clicked on the site with the intention 
+                of sticking around for a bit. Now let’s say you clicked on the site because you 
+                want to find my email address, or maybe my CV, or something like that. That kind 
+                of information, that you would simply check and then leave the site, is what I call 
+                “quick info”. This is what the buttons on the nav bar provide the user with. An 
+                easy way to access information without having to liaise with my navigation system. 
+            </p>
+            <p class="paragraph">
+                If you’re here for the juicy stuff, however, you’ll find that each page has a replica 
+                of the scrollable button system at the bottom. This is so that the user can quickly 
+                and easily switch between pieces of information under the same category as the one 
+                they are currently reading. This way, they don’t have to return to the home page to 
+                navigate unless they want to enter a different category of information. 
+            </p>
+            <p class="paragraph">
+                The feedback from my previous submission mentioned something about my paragraphs starting 
+                and ending too close to the page. This made the text on the website difficult or awkward 
+                to read. To fix this, I put the text in a box and justified it. Now the text is at least 
+                70mm (I measured) from the ends of the screen. 
+            </p>
+            <p class="paragraph">
+                I used the same Helvetica font from the previous submission because it is simple and easy to read. 
+            </p>
+            <p class="paragraph">
+                Thank you for reading. There is no conclusion paragraph. Just stop reading right…about…here.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <button type="button" class="box" onclick="window.location.href='designPage1.html'">
+                <h1>
+                    Design Changes
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='designPage2.html'">
+                <h1>
+                    Style Guide
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='designPage3.html'">
+                <h1>
+                    Reflection
+                </h1>
+            </button>
+        </div>
+    </footer>
+</body>
+</html>

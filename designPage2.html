@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="designPages.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="link">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <canvas id="testCan"></canvas>
+        <script src="granim.min.js"></script>
+        <script>
+            var fancyBackground = new Granim({
+                element: '#testCan',
+                name: 'granim',
+                opacity: [1, 1],
+                states: {
+                    "default-state": {
+                        gradients: [
+                            ['#f64e4d', '#000000'],
+                            ['#000000', '#f64e4d']
+                        ],
+                        transitionSpeed: 10000,
+                    }
+                }
+            });
+        </script>
+        <section class="blogText">
+            <h1>
+                Style Guide
+            </h1>
+            <p class="paragraph">
+                The image you see below is the style guide for this website. 
+                It contains all the colours, colour codes, and fonts used on 
+                the site. All of these things were chosen and implemented with
+                the goal of creating a simple, clean looking website. 
+            </p>
+            <img src="Style Guide.jpg" alt="Definitly a style guide.">
+            <p class="paragraph">
+                I have used the colours black, white, and grey for the entire 
+                site. This colour scheme required very little thought and 
+                effort to implement. It also means that my text is easy to 
+                read (white text on a black background). 
+            </p>
+            <p class="paragraph">
+                The grey is used as a background colour for the &lt;main&gt; sections 
+                    of the page, just so it isn’t too bright. I sometimes have 
+                    trouble doing readings and looking at web pages when they’re 
+                    mostly white, so this one is for people have the same/similar issues. 
+            </p>
+            <p class="paragraph">
+                All the colours together give the website a newspaper like look which 
+                was an unintended but welcome side effect of my colour scheme.
+            </p>
+            <p class="paragraph">
+                The fonts are still the same as in the previous iteration. Helvetica 
+                from the Ariel family. This is because it is just so easy on the eye. 
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <button type="button" class="box" onclick="window.location.href='designPage1.html'">
+                <h1>
+                    Design Changes
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='designPage2.html'">
+                <h1>
+                    Style Guide
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='designPage3.html'">
+                <h1>
+                    Reflection
+                </h1>
+            </button>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="designPages.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="link">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <canvas id="testCan"></canvas>
+        <script src="granim.min.js"></script>
+        <script>
+            var fancyBackground = new Granim({
+                element: '#testCan',
+                name: 'granim',
+                opacity: [1, 1],
+                states: {
+                    "default-state": {
+                        gradients: [
+                            ['#f64e4d', '#000000'],
+                            ['#000000', '#f64e4d']
+                        ],
+                        transitionSpeed: 10000,
+                    }
+                }
+            });
+        </script>
+        <section class="blogText">
+            <h1>
+                Reflection
+            </h1>
+            <h1>
+                Critical Reflection
+            </h1>
+            <p class="paragraph">
+                For this exam I am required to submit a deployed portfolio website with good 
+                UI/UX and appropriate design and typography. It is also required to run on code 
+                with zero plagiarism. In this critical reflection I will be going over the sight 
+                and determining to what extent these requirements have been met. 
+            </p>
+            <h2>
+                UI/UX
+            </h2>
+            <p class="paragraph">
+                My home page user interface allows the user to initially navigate to anything and 
+                everything they may need in one click. I have achieved this through what I like to 
+                call an “Open-Plan” home page. An open plan room is one in which there are little 
+                to no walls dividing it up into smaller sections. In a similar vein, on my home page, 
+                there is nothing keeping the user from any part of the website. The user can access 
+                all blog posts and pieces of information on that single page. I believe this is great 
+                because the user does not have to complete many actions to find what they came for. 
+                The drawback to this layout, however, is that it potentially increases the amount of 
+                time it takes the user to make a decision. Hick’s law states that “The time it takes 
+                to make a decision increases with the number and complexity of choices.” My home page 
+                gives the user a lot of choices to make at once, which means that if they did not come 
+                to the sight with a specific piece of information in mind it may take them longer to 
+                decide what they would like to see first. I am willing to tolerate this drawback because 
+                I believe it is frustrating to have to wade through a series of lists and options. The user 
+                may take a moment longer to decide where they want to go, but once they do decide they will 
+                have a relatively easy time getting there. 
+            </p>
+            <p class="paragraph">
+                On my content pages we see a scroll-bar system like the one on the home screen. This list of 
+                items contains articles that are similar or contain the same type of information as the information 
+                the user is currently looking at. So, for example, if you are looking at a blog post the scrollable 
+                items at the bottom of the page are a collection of other blog posts. This was inspired by the many 
+                social media platforms have algorithms that will show you more of what you like. Since I cannot create 
+                an algorithm to track the user and then alter the site to show them more of what they like I have 
+                decided to try and make that decision before hand by just grouping similar bits of information together. 
+                This has the effect of again reducing the number of actions the user must take to find information they 
+                would likely want to see. The drawback with this idea is that the user is not encouraged to explore the 
+                rest of the site once they are in a specific section. They may decide that they are done reading through 
+                blogs and then discover that there is much more that they could have seen. Or they could simply leave without 
+                seeing the other things. The only thing I’m hoping will prevent this from happening is the “About Me” section 
+                which is now on top (as suggested in the feedback I received). It is a short section and will definitely give 
+                people time to see that there is more to the site. 
+            </p>
+            <p class="paragraph">
+                I have decided not to include a nav bar. From the feedback from assignment 2 I saw that my nav bar included a 
+                lot of unnecessary elements and adding the sections I already have to the nave bar would be redundant and require 
+                me to create new menu pages. This seemed to me like it would be a waste of effort since my home page acts as a 
+                kind of nav bar on its own.
+            </p>
+            <p class="paragraph">
+                The fonts used on my sight are all from the San Serif family. This family is known for having good readability. 
+                My colour scheme now includes some red and black in the background (inspired by the Anime.js website) to add some 
+                much-needed colour. These colours stay still on the home page so that all the fonts are always readable but move 
+                around on pages that have still white backgrounds. My creative additions have not significantly compromised the 
+                websites readability. I was initially worried about the moving background colours distracting the user from the 
+                content they need to read but after slowing down the animation and giving the website to a few people to look at 
+                I was able to conclude that the content is still readable with the moving background. 
+            </p>
+            <h2>
+                Technical
+            </h2>
+            <p class="paragraph">
+                On the technical side of my website, things are looking better. I made sure to include many of the tags that are 
+                essential for good semantic markup. The HTML is not perfect though as it contains some &lt;<div>&gt;s and is missing the 
+                necessary &lt;<cite>&gt; and &lt;<figure>&gt; tags. Another issue is the JavaScript that is found in all my HTML pages. This 
+                is there because I struggle to get the code to work in its own JavaScript file. I decided that since the code 
+                snippet was quite small, and I needed the gradient provided by the Granim API to help make my website less plain, 
+                that I would keep it in. All other JavaScript is stored in separate JavaScript files. This means the damage to the 
+                neatness and quality of my code is minimal. 
+            </p>
+            <p class="paragraph">
+                One issue I had was giving my elements proper ids and classes. I often struggled to get CSS or JavaScript to communicate 
+                with my HTML and would create a lot of test elements with random names. As a result, some elements have strange names and 
+                there are bits of CSS that do not do anything. This increases file sizes and will make maintenance extremely difficult for 
+                someone who has never seen my code before. Given more time I would definitely have to go back to every script and remove 
+                unnecessary bits of code.    
+            </p>
+            <p class="paragraph">
+                Through trying to learn JavaScript APIs and gain more knowledge on web development, I have realized that my code could be 
+                a lot neater and simpler. I am not sure if it is possible to fix the code I currently have or if it all just needs to be 
+                redone from scratch, but it can definitely be more developer friendly. None of it is blatantly plagiarized. It may have 
+                similar structures to code found on tutorials and examples from API documentation, but none of it is just straight copy-paste. 
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <button type="button" class="box" onclick="window.location.href='designPage1.html'">
+                <h1>
+                    Design Changes
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='designPage2.html'">
+                <h1>
+                    Style Guide
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='designPage3.html'">
+                <h1>
+                    Reflection
+                </h1>
+            </button>
+        </div>
+    </footer>
+</body>
+</html>

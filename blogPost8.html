@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="blogPosts.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="link">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <canvas id="testCan"></canvas>
+        <script src="granim.min.js"></script>
+        <script>
+            var fancyBackground = new Granim({
+                element: '#testCan',
+                name: 'granim',
+                opacity: [1, 1],
+                states: {
+                    "default-state": {
+                        gradients: [
+                            ['#f64e4d', '#000000'],
+                            ['#000000', '#f64e4d']
+                        ],
+                        transitionSpeed: 10000,
+                    }
+                }
+            });
+        </script>
+        <section class="blogText">
+            <h1>
+                My JavaScript Library Experience
+            </h1>
+            <p class="paragraph">
+                Something new and interesting that was added to the brief for exams was the instruction to include a researched Javascript API/Library/Framework. In this essay I will discuss my experiences trying to fulfil this requirement.  
+            </p>
+            <h2>
+                Anime.Js
+            </h2>
+            <p class="paragraph">
+                Anime.js is a JavaScript animation library created by Julian Garnier to allow developers to animate anything. It works with all things web and I have chosen this library because my website is bland. I wanted to make it more interesting and interactive to keep the user engaged. 
+            </p>
+            <p class="paragraph">
+                The first challenge I encountered with Anime.js was learning new JavaScript that I had never encountered in any of the lectures before. The tutorials and examples available online had no connection to the knowledge I already had. This made it feel like I had skipped a few steps in my JavaScript journey. Trying not to blatantly plagiarise code was another challenge. A lot of the tutorials and examples found online are similar, so to figure out exactly what every line does I would have to experiment, and I did not feel like I had time for that. Therefore I was forced to keep things simple and work with the understanding I was able to gain in the little time I had.  
+            </p>
+            <p class="paragraph">
+                It was generally quite difficult to teach myself all this new code with documentation alone with time pressure. I believe that by the end of the year I will be able to fully master Anime.Js
+            </p>
+            <h2>
+                Granim.js
+            </h2>
+            <p class="paragraph">
+                Granim.js is a small JavaScript Library for creating colour gradient animations. This library was chosen to add more colours to my website as well as make it more fun. It works entirely with the canvas HTML element. 
+            </p>
+            <p class="paragraph">
+                The first challenge I faced was learning what a &lt;<canvas>&gt; element is and how it works. It turns out it is just an element that allows you to draw your own shapes. Once I got that working, I ran into a bit of a dilemma:   
+            </p>
+            <p class="paragraph">
+                I know that HTML documents are only supposed to have HTML in them. The problem is that all, and I mean all, of the Granim.js tutorials show you how to use it by putting it into your HTML document. I did my best to try and get it to work from its own JavaScript file and failed. This left me with a choice. Do I resort to finding a picture to use as a background, or do I just leave the little bit of JavaScript in my HTML. I chose to leave the code in because finding an interesting background would mean spending time looking for one, the spending time looking for a new font colour to work with the background. To save time and also give my website the visual improvement it desperately needs, the code would have to stay. 
+            </p>
+            <p class="paragraph">
+                Another challenge was deciding which colours I want to have. I eventually decided on black and red, a decision that was inspired by the Anime.js website which I really liked. 
+            </p>
+            <h2>
+                JQuery
+            </h2>
+            <p class="paragraph">
+                JQuery is a JavaScript library that was created to allow for quicker, easier DOM traversal and manipulation. It seems to do this mostly by making the code you write to traverse the DOM a lot simpler. You can now accomplish a task that would take many lines of code, with a single line.             
+            </p>
+            <p class="paragraph">
+                JQuery was chosen because I was having a lot of issues getting my Anime.js code to work. I was either animating the wrong elements or not animating anything at all, so a library that makes DOM traversal easier made sense at the time. 
+            </p>
+            <p class="paragraph">
+                Despite this intent, I ended up not using it because it gave me the same issues. Yes, the code was simpler and quicker to write but I was stills struggling to communicate with the correct elements. The problem turned out to be in my HTML script and I went back to using regular JS. The library is installed, but all of the code related to it has been removed.             </p>
+            <h2>
+                An Interesting error with all libraries
+            </h2>
+            <p class="paragraph">
+                An error I kept getting with all the libraries I used was one that said “require” is not defined. Now through my research I had picked up that a line of code like this: const anime = require('animejs');            
+            </p>
+            <p class="paragraph">
+                Was essential for these libraries to work. It turned out that it was the very thing holding me back. I still do not understand the issue as StackOverflow sent me down a deep rabbit hole to look for solutions. I am eager to bring this problem up in class and find out what exactly is going on there.            </p>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <button type="button" class="box" onclick="window.location.href='blogPost1.html'">
+                <h1>
+                    The Median is the Message?
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost2.html'">
+                <h1>
+                    Semantic Markup.
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost3.html'">
+                <h1>
+                    Metadata.
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost4.html'">
+                <h1>
+                    Information Geographies
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost5.html'">
+                <h1>
+                    Society and Design Justice.
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost6.html'">
+                <h1>
+                    My UX and UI.
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost7.html'">
+                <h1>
+                    My UX and UI.
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost68html'">
+                <h1>
+                    My UX and UI.
+                </h1>
+            </button>
+        </div>
+    </footer>
+</body>
+</html>

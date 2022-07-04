@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="blogPosts.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="link">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <canvas id="testCan"></canvas>
+        <script src="granim.min.js"></script>
+        <script>
+            var fancyBackground = new Granim({
+                element: '#testCan',
+                name: 'granim',
+                opacity: [1, 1],
+                states: {
+                    "default-state": {
+                        gradients: [
+                            ['#f64e4d', '#000000'],
+                            ['#000000', '#f64e4d']
+                        ],
+                        transitionSpeed: 10000,
+                    }
+                }
+            });
+        </script>
+        <section class="blogText">
+            <h1>
+                Semantic Markup.
+            </h1>
+            <p class="paragraph">
+                Semantic Markup seems to have many definitions that somewhat agree with each other. 
+                Most sources agree that it is a way of writing HTML that clearly defines the 
+                different sections and the layout of your website for both the user and the browser.
+            </p>
+            <p class="paragraph">
+                Some examples of semantic elements in HTML are: &lt;article&gt;, &lt;section&gt;, &lt;nav&gt;, &lt;summary&gt;, 
+                and &lt;header&gt;. 
+            </p>
+            <p class="paragraph">
+                Semantic markup can help you get your information to your target audience. By placing 
+                the right information in the right tags, you can establish a hierarchy that helps 
+                browsers know what your page is about. Now your webpage can be ranked according to 
+                its most important content and pulled up for relevant searches. 
+            </p>
+            <p class="paragraph">
+                Webpages without semantic markup are basically inaccessible to people with disabilities 
+                who would normally rely on assistive technologies to access information on the web. 
+                A lack of semantic markup would also make your page inaccessible to people that use 
+                text browsers, browsers without stylesheets, and other tools or devices that rely on 
+                semantic markup. By using semantic markup, you make your information accessible to a 
+                lot more people.
+            </p>
+            <p class="paragraph">
+                Developers also benefit from the use of semantic markup as it makes code easier to 
+                maintain in the long run. If another developer was to take over your project or simply 
+                read your code, they would find clear and well-structured code. This means no confusion, 
+                and no train smash if you decide to go on holiday and your website has an issue in your 
+                absence. 
+            </p>
+            <h1>
+                References
+            </h1>
+            <p class="paragraph">
+                Brevity, 2017. Why Using Semantic Markup Is Important In Web Design And Development. [Online]
+                Available at:  
+                <a href="https://seekbrevity.com/semantic-markup-important-web-design/#:~:text=Semantic%20markup%20is%20a%20way,content%20rather%20than%20its%20appearance">
+                    https://seekbrevity.com/semantic-markup-important-web-design/#:~:text=Semantic%20markup%20is%20a%20way,content%20rather%20than%20its%20appearance
+                </a> .
+                [Accessed 2022 March 26].
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <button type="button" class="box" onclick="window.location.href='blogPost1.html'">
+                <h1>
+                    The Median is the Message?
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost2.html'">
+                <h1>
+                    Semantic Markup.
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost3.html'">
+                <h1>
+                    Metadata.
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost4.html'">
+                <h1>
+                    Information Geographies
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost5.html'">
+                <h1>
+                    Society and Design Justice.
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost6.html'">
+                <h1>
+                    My UX and UI.
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost7.html'">
+                <h1>
+                    My UX and UI.
+                </h1>
+            </button>
+            <button type="button" class="box" onclick="window.location.href='blogPost68html'">
+                <h1>
+                    My UX and UI.
+                </h1>
+            </button>
+        </div>
+    </footer>
+</body>
+</html>
